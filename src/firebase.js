@@ -3,13 +3,13 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCTtvjYolSeAiWAag1F8CI_TsScEDC1dTI",
-  authDomain: "banco-tdw-pucpr.firebaseapp.com",
-  projectId: "banco-tdw-pucpr",
-  storageBucket: "banco-tdw-pucpr.appspot.com",
-  messagingSenderId: "875837245575",
-  appId: "1:875837245575:web:6d224f06e786f4a3999022",
-  measurementId: "G-124WPYGJV6"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 if(!firebase.apps.length) {
